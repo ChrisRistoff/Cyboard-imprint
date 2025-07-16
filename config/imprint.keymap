@@ -150,7 +150,7 @@
 
         scroller {
             layers = <3>;
-            input-processors = <&zip_xy_to_scroll_mapper 1 6>;
+            input-processors = <&zip_xy_to_scroll_mapper> <&zip_xy_scaler 1 6>;
             process-next;
         };
 
