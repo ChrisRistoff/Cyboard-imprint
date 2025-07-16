@@ -9,7 +9,7 @@
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
-    combos {
+/*     combos {
         compatible = "zmk,combos";
 
         combo_lbrc {
@@ -74,7 +74,7 @@
             bindings = <&kp MINUS>;
             layers = <0>;
         };
-    };
+    }; */
 
     keymap {
         compatible = "zmk,keymap";
