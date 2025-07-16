@@ -94,7 +94,7 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V     &kp B               &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
 &trans     &trans  &trans    &trans    &trans                                   &trans    &trans     &trans    &trans    &trans
                                        &lt 1 SPACE &kp LCTRL &kp LALT  &mkp LCLK   &kp BSPC  &kp ENTER
-                                       &kp LGUI  &mo 2    &mo 3      &mkp RCLK   &mo 2     &mo 1
+                                       &kp LGUI  &kp LSHFT    &mo 3      &mkp RCLK   &kp RSHFT     &mo 1
             >;
         };
 
@@ -160,4 +160,11 @@
         <&zip_xy_to_scroll_mapper>,
         // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+
+        scroller {
+            layers = <3>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+            process-next;
+        };
+
 };
